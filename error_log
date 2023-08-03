@@ -1,0 +1,7 @@
+[06-Apr-2021 18:56:22 UTC] PHP Warning:  include_once(index.html): failed to open stream: No such file or directory in /home/ezvug3rq61pm/public_html/index.php on line 1
+[06-Apr-2021 18:56:22 UTC] PHP Warning:  include_once(): Failed opening 'index.html' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ezvug3rq61pm/public_html/index.php on line 1
+[06-Apr-2021 18:56:30 UTC] PHP Warning:  include_once(index.html): failed to open stream: No such file or directory in /home/ezvug3rq61pm/public_html/index.php on line 1
+[06-Apr-2021 18:56:30 UTC] PHP Warning:  include_once(): Failed opening 'index.html' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ezvug3rq61pm/public_html/index.php on line 1
+[19-Apr-2021 20:03:46 UTC] PHP Parse error:  syntax error, unexpected 'PHPMailer' (T_STRING) in /home/ezvug3rq61pm/public_html/index.html on line 1284
+[03-Feb-2022 19:15:18 UTC] PHP Warning:  include_once(index.html): failed to open stream: No such file or directory in /home/ezvug3rq61pm/public_html/index.php on line 1
+[03-Feb-2022 19:15:18 UTC] PHP Warning:  include_once(): Failed opening 'index.html' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ezvug3rq61pm/public_html/index.php on line 1

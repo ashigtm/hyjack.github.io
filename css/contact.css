@@ -1,0 +1,106 @@
+
+
+._container_con {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* #contact_tab input[type="text"],
+#contact_tab input[type="email"],
+#contact_tab input[type="tel"],
+#contact_tab input[type="url"],
+#contact_tab textarea,
+#contact_tab button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+} */
+
+#contact_tab {
+  background: #F9F9F9;
+  padding: 25px;
+  /* margin: 150px 0; */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact_tab h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact_tab h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact_tab input[type="text"],
+#contact_tab input[type="email"],
+#contact_tab input[type="tel"],
+#contact_tab input[type="url"],
+#contact_tab textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  color: black;
+}
+#contact_tab input::placeholder{
+    font-size: 12px
+}
+#contact_tab input[type="text"]:hover,
+#contact_tab input[type="email"]:hover,
+#contact_tab input[type="tel"]:hover,
+#contact_tab input[type="url"]:hover,
+#contact_tab textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact_tab textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+
+
+.copyright {
+  text-align: center;
+}
+
+#contact_tab input:focus,
+#contact_tab textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
