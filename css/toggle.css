@@ -1,7 +1,7 @@
 body {
   font-family: "Merriweather", serif !important;
 }
-.nav>li>a>img{
+.nav > li > a > img {
   max-width: 20px;
 }
 
@@ -24,18 +24,18 @@ input[type="date"] {
   font-size: 20px;
 }
 
-
 .zoom:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
-.service_img{
+.service_img {
   max-width: 10%;
 }
-.services-flex
-{
-  display: flex;flex-wrap: wrap; height: 50vh;
+.services-flex {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
 }
 #intro_btn {
   margin: unset;
@@ -155,12 +155,12 @@ input[type="date"] {
   max-width: 800px;
   text-align: left;
 }
-#about {
+/* #about {
   background-image: url("../images/mystory.jpeg");
 }
 #events {
   background-image: url("../images/events.jpeg");
-}
+} */
 .intro_wrapper {
   position: relative;
   height: auto;
@@ -171,7 +171,7 @@ input[type="date"] {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.specials_wrapper {
+/* .specials_wrapper {
   z-index: 1099;
   height: auto;
   background-size: cover;
@@ -183,12 +183,11 @@ input[type="date"] {
   background-position: center center;
 }
 
-.services_wrapper
-{
-  background-image: url('../images/services.jpeg');
+.services_wrapper {
+  background-image: url("../images/services.jpeg");
   background-size: cover;
   background-attachment: fixed;
-  background-color: unset; 
+  background-color: unset;
   height: 100vh;
 }
 .dialog_box {
@@ -199,7 +198,7 @@ input[type="date"] {
   background-size: cover;
 
   z-index: 10220;
-}
+} */
 
 .dialog_box i {
   float: right;
@@ -213,12 +212,12 @@ input[type="date"] {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-.contact_section {
+/* .contact_section {
   background-image: url("../images/contactus.jpeg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .contact_section .sidebar--footer__dark {
   background: unset;
 }
@@ -336,35 +335,35 @@ input[type="date"] {
   position: absolute;
   cursor: pointer;
 }
-.vh-100-contact{
+.vh-100-contact {
   height: 100vh;
 }
 
 @media only screen and (max-width: 899px) {
-  .modal-height{
-    height: 160%
+  .modal-height {
+    height: 160%;
   }
-  .modal-top
-  {
+  .modal-top {
     top: 80%;
   }
-  .overflow-y{
-  overflow-y: scroll;
+  .overflow-y {
+    overflow-y: scroll;
   }
-  body{
+  body {
     overflow-x: hidden;
   }
-  .services_wrapper{
+  .services_wrapper {
     height: unset;
   }
-  .services-flex
-{
-  display: unset;flex-wrap: unset; height: unset;
-}
-.services-flex h2{
-  margin: 10px auto 30px;
-}
-  .vh-100-contact{
+  .services-flex {
+    display: unset;
+    flex-wrap: unset;
+    height: unset;
+  }
+  .services-flex h2 {
+    margin: 10px auto 30px;
+  }
+  .vh-100-contact {
     height: unset;
   }
   .responsive-padding {
@@ -390,7 +389,7 @@ input[type="date"] {
   .center_service {
     padding: 20px;
   }
-  .contact_section{
+  .contact_section {
     height: unset !important;
   }
 }
@@ -410,11 +409,11 @@ button:focus {
 .knowLessBtn {
   margin: 0 15px !important;
 }
-#home{
+#home {
   height: 100vh !important;
 }
 @media (max-width: 480px) {
-  .vh-100-contact{
+  .vh-100-contact {
     height: unset;
   }
   .event-wrap {
@@ -458,7 +457,6 @@ button:focus {
   .mainEventContent {
     padding: 20px;
   }
- 
 
   .center-element {
     padding: 20px;
@@ -468,7 +466,6 @@ button:focus {
     font-size: 14px;
   }
 }
-
 
 .dropdown {
   position: relative;
@@ -490,8 +487,12 @@ button:focus {
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /*********************************************************************/
