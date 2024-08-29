@@ -674,132 +674,132 @@
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New1.jpg')"
-              src="./images/New1.jpg"
+              onclick="openImage('./images/2024/img1.jpg')"
+              src="./images/2024/img1.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New2.jpg')"
-              src="./images/New2.jpg"
+              onclick="openImage('./images/2024/img2.jpg')"
+              src="./images/2024/img2.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New3.jpg')"
-              src="./images/New3.jpg"
+              onclick="openImage('./images/2024/img3.jpg')"
+              src="./images/2024/img3.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New4.jpg')"
-              src="./images/New4.jpg"
+              onclick="openImage('./images/2024/img4.jpg')"
+              src="./images/2024/img4.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New5.jpg')"
-              src="./images/New5.jpg"
+              onclick="openImage('./images/2024/img5.jpg')"
+              src="./images/2024/img5.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New6.jpg')"
-              src="./images/New6.jpg"
+              onclick="openImage('./images/2024/img6.jpg')"
+              src="./images/2024/img6.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New7.jpg')"
-              src="./images/New7.jpg"
+              onclick="openImage('./images/2024/img7.jpg')"
+              src="./images/2024/img7.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New8.jpg')"
-              src="./images/New8.jpg"
+              onclick="openImage('./images/2024/img8.jpg')"
+              src="./images/2024/img8.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New9.jpg')"
-              src="./images/New9.jpg"
+              onclick="openImage('./images/2024/img9.jpg')"
+              src="./images/2024/img9.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New10.jpg')"
-              src="./images/New10.jpg"
-            />
-          </div>
-
-          <div>
-            <img
-              class="gallery-image"
-              onclick="openImage('./images/New11.jpg')"
-              src="./images/New11.jpg"
+              onclick="openImage('./images/2024/img10.jpg')"
+              src="./images/2024/img10.jpg"
             />
           </div>
 
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New12.jpg')"
-              src="./images/New12.jpg"
+              onclick="openImage('./images/2024/img11.jpg')"
+              src="./images/2024/img11.jpg"
             />
           </div>
 
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New13.jpg')"
-              src="./images/New13.jpg"
+              onclick="openImage('./images/2024/img12.jpg')"
+              src="./images/2024/img12.jpg"
             />
           </div>
 
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New14.jpg')"
-              src="./images/New14.jpg"
+              onclick="openImage('./images/2024/img13.jpg')"
+              src="./images/2024/img13.jpg"
             />
           </div>
 
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New15.jpg')"
-              src="./images/New15.jpg"
+              onclick="openImage('./images/2024/img14.jpg')"
+              src="./images/2024/img14.jpg"
+            />
+          </div>
+
+          <div>
+            <img
+              class="gallery-image"
+              onclick="openImage('./images/2024/img15.jpg')"
+              src="./images/2024/img15.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/New16.jpg')"
-              src="./images/New16.jpg"
+              onclick="openImage('./images/2024/img16.jpg')"
+              src="./images/2024/img16.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/new21.jpeg')"
-              src="./images/new21.jpeg"
+              onclick="openImage('./images/2024/img17.jpg')"
+              src="./images/2024/img17.jpg"
             />
           </div>
           <div>
             <img
               class="gallery-image"
-              onclick="openImage('./images/new22.jpeg')"
-              src="./images/new22.jpeg"
+              onclick="openImage('./images/2024/img18.jpg')"
+              src="./images/2024/img18.jpg"
             />
           </div>
         </div>
@@ -1385,16 +1385,45 @@
     <!-- <script type="text/javascript" src="js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="js/main.js"></script> -->
     <script type="text/javascript">
-      $(window).load(function () {
-        $(".flexslider").flexslider({
-          animation: "slide",
-          animationLoop: true,
-          itemWidth: 210,
-          itemMargin: 5,
-          minItems: 1,
-          maxItems: 3,
-        });
-      });
+      (function() {
+          
+          // store the slider in a local variable
+          var $window = $(window),
+              flexslider = { vars:{} };
+
+          // tiny helper function to add breakpoints
+          function getGridSize() {
+            return (window.innerWidth < 600) ? 1 :
+                    (window.innerWidth < 900) ? 3 : 4;
+          }
+
+          $(function() {
+            SyntaxHighlighter.all();
+          });
+
+          $window.load(function() {
+            const width = window.innerWidth - 45;
+            $('.flexslider').flexslider({
+              animation: "slide",
+              animationLoop: false,
+              itemWidth: width,
+              itemMargin: 5,
+              minItems: getGridSize(), // use function to pull in initial value
+              maxItems: getGridSize() // use function to pull in initial value
+            });
+            
+          });
+
+          // check grid size on resize event
+          $window.resize(function() {
+            var gridSize = getGridSize();
+            const width = window.innerWidth - 45;
+
+            flexslider.vars.minItems = gridSize;
+            flexslider.vars.maxItems = gridSize;
+            flexslider.vars.itemWidth = width;
+          });
+        }());
     </script>
     <script>
       var owl = $(".owl-carousel-main").owlCarousel({
