@@ -27837,6 +27837,9 @@ Lightbox
 
 .slick-slide img {
     width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
 }
 
 .slick-slider
@@ -27913,11 +27916,7 @@ Lightbox
     float: left;
     height: 100%;
     min-height: 1px;
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: contain;
-    mix-blend-mode: darken;
-    align-content: center;
+    background: linear-gradient(40deg, #7777, #7771);
 }
 [dir='rtl'] .slick-slide
 {
@@ -27965,9 +27964,20 @@ Lightbox
   }
 }
 
-#partners {
+#partners, #home {
   background-image: url("../images/new210Services.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-color: unset;
+}
+.partner-logos {
+  margin: 20px 0;
+}
+@media (min-width: 900px) {
+  .partner-logos {
+    margin: 80px 0;
+  }
+  #partners {
+    height: 100vh;
+  }
 }
