@@ -142,6 +142,7 @@
       integrity="sha512-2rSKyHme2mrplfIGsA8bFYAYddQ66qR+Dh71OrNZsZOtMdCYa8V1lJvl2mr/qzwcMIs20ddYz4JLiBmwS2K7Iw=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
   </head>
@@ -1071,7 +1072,77 @@
 				</div>
 			</section>
 		</article> -->
-
+      <article
+        id="partners"
+        class="partners_section scroll-page-section scrollify-class"
+        data-section-name="partners"
+      >
+        <section class="partner-logos slider">
+          <div class="slide">
+            <img src="./images/partnerLogo/AFRA.png" alt="AFRA">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/DbZ-Logo.jpeg" alt="DbZ">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Fairmontlogo.webp" alt="Fairmont">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Intercontinental.jpg" alt="Intercontinental">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/jw_marriott_logo.jpeg" alt="jw marriott">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/landmark.png" alt="landmark">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Madhus.png" alt="Madhus">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Mandarian_Oriental.png" alt="Mandarian Oriental">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/natural_history_museum_london_logo_before_after.png" alt="natural_history_museum_london_logo_before_after">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/old-royal-naval-college.jpg" alt="old-royal-naval-college">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Park_Plaza_logo.jpg" alt="Park_Plaza_logo">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Pendely_Manor_Logo.webp" alt="Pendely_Manor_Logo">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Pendely_Manor.jpeg" alt="Pendely_Manor">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/png-transparent-fairmont-hd-logo-thumbnail.png" alt="fairmont">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Rosewood.jpg" alt="Rosewood">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Royal_Lancaster.jpg" alt="Royal_Lancaster">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Savoy_Logo_white.jpeg" alt="Savoy_Logo_white">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/Sopwell-House.png" alt="Sopwell-House">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/The_Carlton_Tower.jpeg" alt="The_Carlton_Tower">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/The_London_Hilton.png" alt="The_London_Hilton">
+          </div>
+          <div class="slide">
+            <img src="./images/partnerLogo/The-Grove-Logo-Prestigious-Venues.png" alt="The-Grove-Logo-Prestigious-Venues">
+          </div>
+        </section>
+      </article>
       <article
         data-bully
         id="client"
@@ -1182,7 +1253,7 @@
                   <hgroup class="pixcode pixcode--heading article__headline">
                     <h3 class="headline__primary main_h2">Contact Us</h3>
                     <h2 class="headline__primary">
-                      Where’s the party tonight?
+                      Where's the party tonight?
                     </h2>
                   </hgroup>
                   <div id="contactus">
@@ -1589,6 +1660,29 @@
           alert("mail sent successfully");
         });
       }
+
+      $(document).ready(function(){
+        $('.partner-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+      });
     </script>
   </body>
 </html>
