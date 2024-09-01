@@ -22660,7 +22660,7 @@ input[type="date"] {
   transform: translate(-50%, -50%);
 }
 .contact_section {
-  background-image: url("../images/new5.jpg");
+  background-image: url("../images/New5.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27975,9 +27975,9 @@ Lightbox
 }
 @media (min-width: 900px) {
   .partner-logos {
-    margin: 80px 0;
+    margin: 50px 0;
   }
   #partners {
-    height: 100vh;
+    height: 60vh;
   }
 }
