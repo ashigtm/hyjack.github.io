@@ -27916,7 +27916,7 @@ Lightbox
     float: left;
     height: 100%;
     min-height: 1px;
-    background: linear-gradient(40deg, #7777, #7771);
+    background: linear-gradient(40deg, #888, #fff);
 }
 [dir='rtl'] .slick-slide
 {
@@ -27980,4 +27980,16 @@ Lightbox
   #partners {
     height: 60vh;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #515150;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c59d5f;
+  border-radius: 10px;
 }
