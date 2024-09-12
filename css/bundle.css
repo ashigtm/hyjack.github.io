@@ -22603,7 +22603,7 @@ input[type="date"] {
   text-align: left;
 }
 #about {
-  background-image: url("../images/new214.jpeg");
+  background-image: url("../images/webpimages/about_us.webp");
 }
 #events {
   background-image: url("../images/new211.jpeg");
@@ -22623,7 +22623,7 @@ input[type="date"] {
   height: auto;
   background-size: cover;
   overflow: auto;
-  background-image: url("../images/New13.jpg");
+  background-image: url("../images/webpimages/specials.webp");
   height: 100vh !important;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22631,7 +22631,7 @@ input[type="date"] {
 }
 
 .services_wrapper {
-  background-image: url("../images/new210Services.jpeg");
+  background-image: url("../images/webpimages/our_services.webp");
   background-size: cover;
   background-attachment: fixed;
   background-color: unset;
@@ -22641,7 +22641,7 @@ input[type="date"] {
   height: 100%;
   width: 100%;
   position: fixed;
-  background-image: url("../images/new210Services.jpeg");
+  background-image: url("../images/webpimages/our_services.webp");
   background-size: cover;
 
   z-index: 10220;

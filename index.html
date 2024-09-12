@@ -402,6 +402,12 @@
                   >
                     <a href="#gallery">Gallery</a>
                   </li>
+                  <li
+                    id="menu-item-reviews"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-reviews"
+                  >
+                    <a href="#reviews">Reviews</a>
+                  </li>
 
                   <li
                     id="menu-item-contact"
@@ -450,12 +456,12 @@
         data-section-name="home"
         id="home"
       >
-        <video autoplay muted loop id="HyjackVideos">
+        <!-- <video autoplay muted loop id="HyjackVideos">
           <source src="videos/HyjackVideos.mp4" type="video/mp4" />
-        </video>
+        </video> -->
         <div class="owl-carousel owl-carousel-main owl-theme">
           <div class="item">
-            <!-- <img src="images/main.jpeg" alt="images not found" /> -->
+            <img src="images/webpimages/banner_1.webp" alt="images" />
             <div class="cover">
               <div class="container">
                 <div class="header-content">
@@ -466,7 +472,7 @@
             </div>
           </div>
           <div class="item">
-            <!-- <img src="images/ido.jpeg" alt="images not found" /> -->
+            <img src="images/webpimages/banner_2.webp" alt="images" />
             <div class="cover">
               <div class="container">
                 <div class="header-content">
@@ -482,7 +488,7 @@
             </div>
           </div>
           <div class="item">
-            <!-- <img src="images/martini.jpeg" alt="images not found" /> -->
+            <img src="images/webpimages/banner_3.webp" alt="images" />
             <div class="cover">
               <div class="container">
                 <div class="header-content">
@@ -499,7 +505,7 @@
             </div>
           </div>
           <div class="item">
-            <!-- <img src="images/retro.jpeg" alt="images not found" /> -->
+            <img src="images/webpimages/banner_4.webp" alt="images" />
             <div class="cover">
               <div class="container">
                 <div class="header-content">
@@ -527,7 +533,7 @@
         >
           <div class="center-element ourStory">
             <div>
-              <h2 class="animate fadeIn fromTop delay1">Our Story!</h2>
+              <h2 class="animate fadeIn fromTop delay1">About Us!</h2>
               <p class="intro_half_1" id="intro_half">
                 An eclectic mix of style, a dash of innovation and a dollop of
                 exceptional service. All blended together to serve you the
@@ -1074,14 +1080,15 @@
 		</article> -->
       <article
         data-bully
-        id="client"
+        id="reviews"
         style="
           background-image: url('images/new27.jpeg');
           background-size: cover;
           background-attachment: fixed;
           background-color: unset;
         "
-        class="scroll-page-section customers article--page article--main article--subpage border-simple post-15 page type-page status-publish has-post-thumbnail hentry"
+        class="reviews_section scroll-page-section scrollify-class scroll-page-section customers article--page article--main article--subpage border-simple post-15 page type-page status-publish has-post-thumbnail hentry"
+        data-section-name="reviews"
       >
         <section
           class="article__content"
@@ -1524,7 +1531,7 @@
           // tiny helper function to add breakpoints
           function getGridSize() {
             return (window.innerWidth < 600) ? 1 :
-                    (window.innerWidth < 900) ? 3 : 4;
+                    (window.innerWidth < 900) ? 2 : 3;
           }
 
           $(function() {
