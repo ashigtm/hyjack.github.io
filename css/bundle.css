@@ -22606,7 +22606,7 @@ input[type="date"] {
   background-image: url("../images/webpimages/about_us.webp");
 }
 #events {
-  background-image: url("../images/new211.jpeg");
+  background-image: url("../images/events.jpeg");
 }
 .intro_wrapper {
   position: relative;
@@ -22660,7 +22660,7 @@ input[type="date"] {
   transform: translate(-50%, -50%);
 }
 .contact_section {
-  background-image: url("../images/New5.jpg");
+  background-image: url("../images/contactus.jpeg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
