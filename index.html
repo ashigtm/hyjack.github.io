@@ -676,8 +676,10 @@
         <hgroup class="pixcode pixcode--heading article__headline">
           <h3 class="headline__primary main_h2">Gallery</h3>
         </hgroup>
-
-        <div id="gallery_conatainer">
+        <div id="gallery_conatainer" class="gallery_container">
+          <!-- Images will be dynamically inserted here -->
+        </div>
+        <!-- <div id="gallery_conatainer">
           <div>
             <img
               class="gallery-image"
@@ -809,7 +811,7 @@
               src="./images/2024/img18.jpg"
             />
           </div>
-        </div>
+        </div> -->
       </section>
 
       <section
@@ -1688,6 +1690,43 @@
         let box = document.getElementById("gallery_image_box");
         box.style.display = "none";
       }
+
+      document.addEventListener('DOMContentLoaded', () => {
+          const totalImages = 56;
+          const imagesToShow = 18;
+          const galleryContainer = document.querySelector('.gallery_container');
+
+          // Function to get random images
+          function getRandomImages() {
+              const images = [];
+              while (images.length < imagesToShow) {
+                  const randomIndex = Math.floor(Math.random() * totalImages) + 1;
+                  if (!images.includes(randomIndex)) {
+                      images.push(randomIndex);
+                  }
+              }
+              return images;
+          }
+
+          // Function to display images
+          function displayImages() {
+              const images = getRandomImages();
+              galleryContainer.innerHTML = '';
+              images.forEach(index => {
+                const div = document.createElement('div');
+                const img = document.createElement('img');
+                  img.src = `images/webpimages/gallery/image${index}.webp`;
+                  img.alt = `Image ${index}`;
+                  img.className = `gallery-image`;
+                  img.addEventListener('click', () => openImage(img.src));
+                  div.appendChild(img);
+                  galleryContainer.appendChild(div);
+              });
+          }
+
+          // Display images on page load
+          displayImages();
+      });
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript">
