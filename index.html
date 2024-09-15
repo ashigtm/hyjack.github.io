@@ -252,6 +252,10 @@
         aria-hidden="true"
       ></i>
     </div>
+    <div id="imageModal" class="modal">
+      <span class="close fa fa-times"></span>
+      <img class="modal-content" id="modalImage" src="" alt="Fullscreen Image">
+    </div>
 
     <div
       id="expert_dialog_box1"
@@ -1680,15 +1684,37 @@
           full.style.display = "none";
         }
       }
+      // Get modal element
+      const modal = document.getElementById('imageModal');
+
+      // Get image element inside modal
+      const modalImage = document.getElementById('modalImage');
+
+      // Get the button that opens the modal
+      const openModalBtn = document.getElementById('openModalBtn');
+
+      // Get the <span> element that closes the modal
+      const closeSpan = document.getElementsByClassName('close')[0];
+      closeSpan.onclick = function() {
+          modal.style.display = 'none';
+      }
       function openImage(img) {
-        let image = document.getElementById("current_image");
-        let box = document.getElementById("gallery_image_box");
-        box.style.display = "block";
-        image.src = img;
+        // let image = document.getElementById("current_image");
+        // let box = document.getElementById("gallery_image_box");
+        // box.style.display = "block";
+        // image.src = img;
+
+        modal.style.display = 'block';
+        modalImage.src = img;
       }
       function closeImage() {
         let box = document.getElementById("gallery_image_box");
         box.style.display = "none";
+      }
+      window.onclick = function(event) {
+          if (event.target === modal) {
+              modal.style.display = 'none';
+          }
       }
 
       document.addEventListener('DOMContentLoaded', () => {
