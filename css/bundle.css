@@ -7949,13 +7949,20 @@ textarea.wpcf7-form-control.wpcf7-textarea,
 .copyright-area {
   color: #ffffff91;
 }
+
+@media screen and (min-width: 1150px) {
+  .nav--main > .menu-item > a {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 @media screen and (min-width: 900px) {
   .site-header {
     padding-top: 0px;
   }
 
   .nav--main > .menu-item > a {
-    padding-left: 24px;
+    padding-left: 12px;
   }
 
   div.page {
@@ -7969,7 +7976,7 @@ textarea.wpcf7-form-control.wpcf7-textarea,
   }
 
   .nav--main > .menu-item > a {
-    padding-right: 24px;
+    padding-right: 12px;
   }
 }
 
