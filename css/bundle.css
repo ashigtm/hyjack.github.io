@@ -7962,6 +7962,12 @@ textarea.wpcf7-form-control.wpcf7-textarea,
   .owl-carousel {
     display: none !important;
   }
+  #home {
+    background-image: url("../images/webpimages/mobilebannerbackgroundImage.webp") !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-color: unset !important;
+  }
 }
 
 @media screen and (min-width: 1150px) {
