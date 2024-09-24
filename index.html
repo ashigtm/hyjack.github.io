@@ -460,9 +460,9 @@
         data-section-name="home"
         id="home"
       >
-        <!-- <video autoplay muted loop id="HyjackVideos">
-          <source src="videos/HyjackVideos.mp4" type="video/mp4" />
-        </video> -->
+        <video autoplay muted loop id="HyjackVideos" class="HyjackMobileVideo">
+          <source src="videos/ARAB_MUSIC_V1.mp4" type="video/mp4" />
+        </video>
         <div class="owl-carousel owl-carousel-main owl-theme">
           <div class="item">
             <img src="images/39A6030_finalNew.jpg" alt="images" />
@@ -1201,10 +1201,8 @@
                           <img src="images/600x600.png" />
                           <h3>
                             <br />
-                            <b
-                              >Excellent Service of mouth watering cocktails and
-                              mocktails</b
-                            ><br /><br />
+                            <b>Excellent Service of mouth watering cocktails and
+                              mocktails</b><br /><br />
                             Hyjack Cocktails provided us with a fantastic
                             service and delicious cocktails for mehndi evening
                             at home followed by an evening reception at the
@@ -1536,10 +1534,6 @@
                     (window.innerWidth < 900) ? 2 : 3;
           }
 
-          $(function() {
-            SyntaxHighlighter.all();
-          });
-
           $window.load(function() {
             const width = window.innerWidth - 45;
             $('.flexslider').flexslider({
@@ -1714,7 +1708,7 @@
       }
 
       document.addEventListener('DOMContentLoaded', () => {
-          const totalImages = 49;
+          const totalImages = 48;
           const imagesToShow = 18;
           const galleryContainer = document.querySelector('.gallery_container');
 

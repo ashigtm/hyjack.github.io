@@ -7949,6 +7949,20 @@ textarea.wpcf7-form-control.wpcf7-textarea,
 .copyright-area {
   color: #ffffff91;
 }
+.HyjackMobileVideo {
+  display: none;
+}
+.owl-carousel {
+  display: block;
+}
+@media (max-width: 899px) {
+  .HyjackMobileVideo {
+    display: block !important;
+  }
+  .owl-carousel {
+    display: none !important;
+  }
+}
 
 @media screen and (min-width: 1150px) {
   .nav--main > .menu-item > a {
