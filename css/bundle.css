@@ -22588,8 +22588,8 @@ input[type="date"] {
 }
 
 .active img {
-  -webkit-animation: zoom 15s;
-  animation: zoom 15s;
+/*   -webkit-animation: zoom 15s;
+  animation: zoom 15s; */
 }
 .intro_half {
   font-weight: 400;
