@@ -16474,7 +16474,7 @@ a:hover > .pixcode--icon.square {
 \*------------------------------------*/
 button.nav-trigger {
   position: absolute;
-  top: 33px;
+  top: 38px;
   left: 1.4vw;
   z-index: 20;
   -webkit-transform: translateY(-50%);
