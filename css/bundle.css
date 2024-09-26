@@ -7958,6 +7958,7 @@ textarea.wpcf7-form-control.wpcf7-textarea,
 @media (max-width: 899px) {
   .HyjackMobileVideo {
     display: block !important;
+    min-height: 101vh;
   }
   .owl-carousel {
     display: none !important;
@@ -22957,6 +22958,7 @@ button:focus {
   z-index: 1;
   cursor: pointer;
   text-align: left !important;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .dropdown-content a {
