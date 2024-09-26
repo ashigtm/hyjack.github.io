@@ -7968,6 +7968,7 @@ textarea.wpcf7-form-control.wpcf7-textarea,
     background-size: cover !important;
     background-attachment: fixed !important;
     background-color: unset !important;
+    background-position: center;
   }
 }
 
