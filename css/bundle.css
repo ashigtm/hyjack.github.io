@@ -22890,7 +22890,7 @@ button:focus {
   margin: 0 15px !important;
 }
 #home {
-  min-height: 100vh !important;
+  max-height: 100vh !important;
 }
 @media (max-width: 480px) {
   .vh-100-contact {
@@ -28003,7 +28003,6 @@ Lightbox
   background-size: cover;
   background-attachment: fixed;
   background-color: unset;
-  height: 100%;
 }
 .partner-logos {
   margin: 20px 0;
