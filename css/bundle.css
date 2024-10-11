@@ -7949,15 +7949,17 @@ textarea.wpcf7-form-control.wpcf7-textarea,
 .copyright-area {
   color: #ffffff91;
 }
-.HyjackMobileVideo {
-  display: none;
-}
 .owl-carousel {
   display: block;
 }
+@media (min-width: 900px) {
+  .HyjackMobileVideo {
+    display: none;
+  }
+}
 @media (max-width: 899px) {
   .HyjackMobileVideo {
-    display: block !important;
+    display: block;
     min-height: 101vh;
   }
   .owl-carousel {
@@ -7966,7 +7968,7 @@ textarea.wpcf7-form-control.wpcf7-textarea,
   #home {
     background-image: url("../images/webpimages/mobilebannerbackgroundImage.webp") !important;
     background-size: cover !important;
-    background-attachment: fixed !important;
+    /* background-attachment: fixed !important; */
     background-color: unset !important;
     background-position: center;
     height: 100%;
@@ -18459,10 +18461,8 @@ html .promo-box__container.promo-box__container a:hover {
     background-color 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-@media only screen and (min-width: 900px) {
-  .site-header {
-    position: fixed;
-  }
+.site-header {
+  position: fixed;
 }
 
 .header--transparent .site-header {
@@ -22667,7 +22667,6 @@ input[type="date"] {
 .services_wrapper {
   background-image: url("../images/webpimages/our_services.webp");
   background-size: cover;
-  background-attachment: fixed;
   background-color: unset;
   height: 100vh;
 }
@@ -28002,7 +28001,7 @@ Lightbox
 #partners, #home {
   background-image: url("../images/DSC04275.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-color: unset;
 }
 .partner-logos {
